@@ -1,0 +1,43 @@
+# ===== JAVA / SPRING =====
+target/
+*.log
+*.class
+
+# ===== MAVEN =====
+.mvn/wrapper/maven-wrapper.jar
+
+# ===== ENV / SEGURIDAD =====
+.env
+application.properties
+application.yml
+
+# ===== DOCKER =====
+docker-compose.yml
+
+# ===== IDEs =====
+.idea/
+*.iml
+*.iws
+*.ipr
+
+.vscode/
+
+# ===== STS =====
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ===== NETBEANS =====
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# ===== OTROS =====
+.DS_Store
