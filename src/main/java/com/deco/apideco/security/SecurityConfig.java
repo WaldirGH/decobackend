@@ -85,7 +85,7 @@ public class SecurityConfig {
                                                 .successHandler(oAuth2LoginSuccessHandler))
                                 .logout(logout -> logout
                                                 .logoutUrl("/logout")
-                                                .logoutSuccessUrl("http://localhost:4200/")
+                                                .logoutSuccessUrl("https://webdecoballoons.netlify.app/")
                                                 .invalidateHttpSession(true)
                                                 .deleteCookies("JSESSIONID")
                                                 .permitAll());
@@ -96,7 +96,7 @@ public class SecurityConfig {
         @Bean
         public CorsConfigurationSource corsConfigurationSource() {
                 CorsConfiguration config = new CorsConfiguration();
-                config.setAllowedOrigins(List.of("http://localhost:4200"));
+                config.setAllowedOrigins(List.of("https://webdecoballoons.netlify.app"));
                 config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
                 config.setAllowedHeaders(List.of("*"));
                 config.setAllowCredentials(true);
