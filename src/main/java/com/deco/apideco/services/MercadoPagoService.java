@@ -30,9 +30,9 @@ public class MercadoPagoService {
                                 .build();
 
                 PreferenceBackUrlsRequest backUrls = PreferenceBackUrlsRequest.builder()
-                                .success("https://webdecoballoons.netlify.app/carrito?pago=ok")
-                                .failure("https://webdecoballoons.netlify.app/carrito?pago=error")
-                                .pending("https://webdecoballoons.netlify.app/carrito?pago=pendiente")
+                                .success("https://webdecoballoons.netlify.app/checkout?pago=ok")
+                                .failure("https://webdecoballoons.netlify.app/checkout?pago=error")
+                                .pending("https://webdecoballoons.netlify.app/checkout?pago=pendiente")
                                 .build();
 
                 PreferenceRequest preferenceRequest = PreferenceRequest.builder()
