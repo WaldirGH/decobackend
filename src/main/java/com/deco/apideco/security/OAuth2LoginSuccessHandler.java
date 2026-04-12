@@ -46,7 +46,7 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
 
         // Redirigir al frontend con el googleId para que haga seguimiento
         response.sendRedirect(
-                "http://localhost:4200/login?googleId=" +
+                "https://webdecoballoons.netlify.app/login?googleId=" +
                         URLEncoder.encode(googleId, StandardCharsets.UTF_8));
     }
 }
