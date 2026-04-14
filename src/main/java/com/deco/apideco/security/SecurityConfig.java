@@ -85,7 +85,7 @@ public class SecurityConfig {
                                                 .successHandler(oAuth2LoginSuccessHandler))
                                 .logout(logout -> logout
                                                 .logoutUrl("/logout")
-                                                .logoutSuccessUrl("https://webdecoballoons.netlify.app/")
+                                                .logoutSuccessUrl("https://webdecointerno.vercel.app/")
                                                 .invalidateHttpSession(true)
                                                 .deleteCookies("JSESSIONID")
                                                 .permitAll());
