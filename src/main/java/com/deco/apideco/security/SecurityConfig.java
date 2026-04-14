@@ -98,6 +98,8 @@ public class SecurityConfig {
                 CorsConfiguration config = new CorsConfiguration();
                 config.setAllowedOrigins(List.of(
                                 "https://webdecoballoons.netlify.app",
+                                "https://webdecointerno.vercel.app",
+                                "https://webdecoballoons.vercel.app",
                                 "https://webdecoadmin.netlify.app"));
                 config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
                 config.setAllowedHeaders(List.of("*"));
