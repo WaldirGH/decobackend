@@ -86,6 +86,7 @@ public class SecurityConfig {
                                 .logout(logout -> logout
                                                 .logoutUrl("/logout")
                                                 .logoutSuccessUrl("https://webdecointerno.vercel.app/")
+                                                .logoutSuccessUrl("https://webdecoballoons.netlify.app/")
                                                 .invalidateHttpSession(true)
                                                 .deleteCookies("JSESSIONID")
                                                 .permitAll());
